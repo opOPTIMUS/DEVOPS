@@ -75,6 +75,32 @@ git config --global user.email "your-email@example.com"
 7. to list the user info
 git config --global --list
 
+## Basic Git Commands
+
+Here are some basic Git commands to help you get started:
+
+### 1. `git init`
+- Initializes a new Git repository in the current directory.
+
+### 2. `git clone <repository-url>`
+- Creates a local copy of a remote repository.
+
+### 3. `git status`
+- Shows the current state of the working directory and staging area (modified, added, or deleted files).
+
+### 4. `git add <file>`
+- Stages a specific file to be committed. To add all files, use `git add .`.
+
+### 5. `git commit -m "commit message"`
+- Commits the staged changes with a descriptive message.
+
+### 6. `git log`
+- Displays the commit history for the repository.
+
+### 7. `git branch`
+- Lists all branches in the repository. Use `git
+
+
 
 
 
