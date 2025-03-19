@@ -168,14 +168,30 @@ git config --global --list
 git remote add origin https://github.com/opOPTIMUS/DEVOPS.git
 git push -u origin master
 ```
-============================================================================================================================================================
+=============================X=============================X================================
 
-Choosing Between main or master Branch in Git
-Background:
-master was the default branch name in Git repositories for many years.
-main has become the default branch name for new repositories on GitHub since October 2020, as part of efforts to use more inclusive terminology.
-Steps to Choose Between main or master:
-If you're starting a new repository:
+# To determine whether to push to the main or master branch on GitHub, follow these steps:
 
-GitHub will use main by default for new repositories.
-If you’re creating a repository from scratch on GitHub, the default branch will automatically be main.
+### Check the Default Branch on GitHub:
+On your repository's GitHub page, the default branch (either main or master) is displayed in the branch dropdown. If your repository is newly created, it likely uses main as the default. If it’s an older repository, it might still use master.
+
+### Check Your Local Branch:
+Use the command git branch to see which branch you’re currently working on. The active branch will be highlighted with an asterisk (*). If you're on main, you’ll push to main. If you’re on master, you’ll push to master.
+
+### Push to the Correct Branch:
+If the default branch is main, push to main with:
+
+```bash
+git push -u origin main
+```
+
+If the default branch is master, push to master with:
+```bash
+git push -u origin master
+```
+
+### Changing the Default Branch (if needed):
+
+You can change the default branch in the GitHub repository settings under the Branches section. Select either main or master and update accordingly.
+
+By following these steps, you can ensure that you’re pushing to the correct branch on GitHub.
