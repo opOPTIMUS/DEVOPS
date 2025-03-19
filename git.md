@@ -11,3 +11,6 @@ If Git is not already installed on your system, use the following commands:
 ```bash
 sudo yum install git -y
 git --version
+```
+
+
