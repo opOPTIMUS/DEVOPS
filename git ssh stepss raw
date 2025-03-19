@@ -1,0 +1,22 @@
+ls ssh keygen
+ls -a
+cd .ssh
+ls
+choose id.rsa.pub
+cat id-rsa.pub 
+copy the key
+go tto settings 
+ssh and gpg keys 
+new ssh key
+give title old ssh key
+paste ethe key to key area
+add keyssh
+copy a repo code ssh link
+git clone "link of repo"
+ls 
+cd repo 
+add a file using    Touch script.sh
+git add sctipyt.sh'
+git commit -m "send to github"
+git push 
+
