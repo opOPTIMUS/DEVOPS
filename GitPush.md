@@ -32,16 +32,16 @@ Create a new directory for your project:
 mkdir gitfile
 ```
 
-Create a new file in the directory:
-
-```bash
-touch optimus.html
-```
-
 Navigate into the project directory:
 
 ```bash
 cd gitfile
+```
+
+Create a new file in the directory:
+
+```bash
+touch optimus.html
 ```
 
 ## Step 3: Initialize Git Repository
@@ -52,17 +52,32 @@ Initialize a new Git repository:
 git init
 ```
 
-Check the status of the repository (should show no files yet):
+Check the Status of the Repository (to see untracked files):
 
 ```bash
 git status
 ```
 
-Commit the changes with a message:
+Add the File to the Staging Area:
+```bash
+git add optimus.html
+```
 
+Alternatively, Add All Files (If you want to add all files, use git add . instead):
+```bash
+git add .
+```
+
+Check the Status Again (to verify that the file is staged):
+```bash
+git status
+```
+
+Commit the changes with a message:
 ```bash
 git commit -m "initial commit"
 ```
+
 View the commit log:
 
 ```bash
