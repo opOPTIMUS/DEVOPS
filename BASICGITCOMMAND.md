@@ -1,88 +1,52 @@
-2. git clone <repository-url>
-Description: Creates a local copy of a remote repository.
+```bash
+# Configure Git
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+git config --global --list
 
-bash
-Copy
-git clone https://github.com/username/repository-name.git
-3. git status
-Description: Displays the state of the working directory and staging area, showing which files are modified, added, or deleted.
+# Create a New Repository
+git init
+git clone https://github.com/username/repository.git
 
-bash
-Copy
+# Checking Repository Status
 git status
-4. git add <file>
-Description: Stages a file to be included in the next commit. To stage all modified files, use git add ..
 
-bash
-Copy
-git add <file-name>
-To stage all files:
-
-bash
-Copy
-git add .
-5. git commit -m "commit message"
-Description: Commits the staged changes with a descriptive message.
-
-bash
-Copy
-git commit -m "Your commit message"
-6. git log
-Description: Shows the commit history for the repository.
-
-bash
-Copy
+# Working with Files
+git add filename
+git add .  # Add all files
+git commit -m "Commit message here"
 git log
-7. git branch
-Description: Lists all the branches in the repository. To create a new branch, use git branch <branch-name>.
 
-bash
-Copy
-git branch
-To create a new branch:
+# Branching
+git branch new-branch-name
+git checkout branch-name
+git checkout -b new-branch-name  # Create and switch to a new branch
+git branch  # List all branches
+git merge branch-name  # Merge a branch into the current branch
 
-bash
-Copy
-git branch <branch-name>
-8. git checkout <branch-name>
-Description: Switches to the specified branch.
+# Remote Repositories
+git remote add origin https://github.com/username/repository.git
+git fetch  # Fetch changes from remote repository
+git pull origin branch-name  # Pull changes and merge from remote repository
+git push origin branch-name  # Push local changes to remote
+git remote -v  # Show current remotes
 
-bash
-Copy
-git checkout <branch-name>
-9. git merge <branch-name>
-Description: Merges the changes from the specified branch into the current branch.
+# Viewing Changes
+git diff  # View changes before committing
+git show commit-hash  # View changes after committing
 
-bash
-Copy
-git merge <branch-name>
-10. git pull
-Description: Fetches the latest changes from the remote repository and merges them into your current branch.
+# Undoing Changes
+git reset filename  # Unstage a file (remove from staging area)
+git checkout -- filename  # Undo local changes to a file
+git rm --cached filename  # Remove a file from the repository (keep locally)
 
-bash
-Copy
-git pull
-11. git push
-Description: Pushes your committed changes to the remote repository.
+# Deleting Branches
+git branch -d branch-name  # Delete a local branch
+git branch -D branch-name  # Force delete a local branch (if not merged)
+git push origin --delete branch-name  # Delete a remote branch
 
-bash
-Copy
-git push
-12. git remote -v
-Description: Displays the URLs of remote repositories connected to your local repository.
+# Tagging
+git tag v1.0.0  # Create a tag (marking a release)
+git push origin --tags  # Push tags to remote repository
+```
 
-bash
-Copy
-git remote -v
-13. git reset <file>
-Description: Unstages a file, removing it from the staging area.
-
-bash
-Copy
-git reset <file-name>
-14. git diff
-Description: Shows the differences between the working directory and the staging area (files that are modified but not yet staged).
-
-bash
-Copy
-git diff
