@@ -15,13 +15,13 @@ git commit -m "text commit"
 ```
 
 ```bash
-git loge --oneline
+git log --oneline
 ```
 
-copy the file id (a7bb83f)
+copy the file id (a7bb83f) <commit id>
 
 ```bash
-copy commit id
+copy <commit id>
 ```
 
 ```bash
@@ -29,7 +29,7 @@ git checkout develope
 ```
 
 ```bash
-git cherry-pick a7bb83f
+git cherry-pick <commit id>
 ```
 
 ```bash
