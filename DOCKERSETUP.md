@@ -69,14 +69,14 @@ docker inspect <containerID>
 View the logs of a specific container (replace enginx with the container name or ID).
 
 ```bash
-docker logs enginx
+docker logs <container ID/name>
 ```
 
 11. Login to a Running Container
 Access the container's shell for interactive use (replace enginx with the container name or ID).
 
 ```bash
-docker exec -it enginx /bin/bash
+docker exec -it <container ID/name> /bin/bash
 ```
 
 12. Test Nginx Server (Inside the Container)
@@ -97,12 +97,12 @@ exit
 Force remove a running container (replace enginx with the container name or ID).
 
 ```bash
-docker rm -f enginx
+docker rm -f <container ID/name>
 ```
 
 15. Remove a Docker Image
 Force remove a Docker image (replace nginx with the image name or ID).
 
 ```bash
-docker rmi -f nginx
+docker rmi -f <imageID/name>
 ```
