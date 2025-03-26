@@ -106,3 +106,5 @@ Force remove a Docker image (replace nginx with the image name or ID).
 ```bash
 docker rmi -f <imageID/name>
 ```
+
+docker create -d --name cont- 80:80 nginx
