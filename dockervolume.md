@@ -22,6 +22,8 @@ removed the container
 CREATING NEW CONTAINER
 
 docker run -itd --name new-cont --mount source=vol-1,target=/devops50
+
+docker volume inspect vol1 (to view the details of volume inspect)
 LOGGING IN THE CONTAINER
 docker exec -it new-cont /bin/bash
 docker volume --help
