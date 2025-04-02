@@ -1,7 +1,12 @@
+Docker-compose --version
+vim docker-compose.yaml
+
 Docker compose up -d
 Docker compose down 
 Docker compose build -d   
 
+SERVICES:
+DB / BE / FE
 DOCKER COMPOSE : 
 
 **Docker Compose** is a tool for defining and running multi-container Docker applications using a single YAML file. It allows you to configure services, networks,
@@ -16,5 +21,8 @@ Docker Swarm is a **container orchestration tool** built into Docker that helps 
 - Use **load balancing** to distribute traffic evenly across containers.
 - Manage services in a **declarative way**, meaning you define the desired state, and Swarm ensures it stays that way.
 In essence, Docker Swarm makes it easier to manage and scale multi-container applications in production environments.
+
+
+
 
 
