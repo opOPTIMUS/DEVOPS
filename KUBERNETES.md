@@ -202,3 +202,15 @@ kubectl apply -f nginx-deployment.yaml
 ```
 
 This will deploy your resources (Pod, Deployment, Service, etc.) to the Kubernetes cluster.
+
+
+
+
+ls
+vim pod.yaml
+pod yaml
+kubectl apply -f pod.yaml (creates pod)
+
+get pods
+kubectl describe pod <podname> 
+  (shows pod details)
