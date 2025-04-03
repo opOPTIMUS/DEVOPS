@@ -1,4 +1,4 @@
-                                                                   ## K8s ARCHITECTURE
+                                               ## K8s ARCHITECTURE
 ![Kubernetes-architecture-diagram-1-1](https://github.com/user-attachments/assets/eb043f56-0b83-4f36-b74c-f8f6c7292188)
 
 CONSIST OF 2 component
