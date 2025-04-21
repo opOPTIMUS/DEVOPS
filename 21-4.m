@@ -48,3 +48,33 @@ resource "aws_instance" "web_server" {
     Name = "UserService-EC2"
   }
 }
+
+
+
+
+🧾 What is EOF in Terraform (or Bash)?
+In your Terraform file, you see this:
+
+
+
+user_data = <<-EOF
+  #!/bin/bash
+  yum update -y
+  yum install -y httpd
+  systemctl start httpd
+  systemctl enable httpd
+  echo "<h1>Welcome to User Service</h1>" > /var/www/html/index.html
+EOF
+
+This is using something called a heredoc (short for "here document") to define a multi-line string.
+
+
+
+# TERRAFORM.TFVARS
+
+In variables.tf, you declare variables (like ami_id, vpc_id, etc.).
+
+In terraform.tfvars, you assign values to those variables.
+
+Terraform automatically reads the .tfvars file when you run terraform apply — so you don’t need to pass values manually in the command line.
+
